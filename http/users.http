@@ -1,0 +1,33 @@
+### 모든 사용자 조회
+GET http://localhost:8080/users
+
+
+### ID로 사용자 조회
+GET http://localhost:8080/users/1
+
+
+### 이름으로 사용자 조회
+GET http://localhost:8080/users/name/JonDoe
+
+
+### 새로운 사용자 생성
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "email": "Jaehoonman123@exmaple.com",
+  "name": "Jaehoonman123"
+}
+
+### 사용자 업데이트
+PUT http://localhost:8080/users/4
+Content-Type: application/json
+
+{
+  "email": "NotJaehoonman@exmaple.com",
+  "name": "JaehoonmanClone"
+}
+
+
+### 사용자 삭제
+DELETE http://localhost:8080/users/5
